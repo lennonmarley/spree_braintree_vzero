@@ -5,6 +5,7 @@ Deface::Override.new(
   text: %{
     <% if method.is_a?(Spree::Gateway::BraintreeVzeroPaypalExpress) %>
       <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg" border="0" alt="PayPal Logo">
+    <% else %>
       <%= render_original %>
     <% end %>
   }
